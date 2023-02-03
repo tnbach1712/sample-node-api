@@ -3,7 +3,7 @@ os: linux
 files:
   - source: ./src
     destination: /home/ec2-user/sample-node-api
-Hooks:
+hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
@@ -14,7 +14,6 @@ Hooks:
       runas: ec2-user
   ApplicationStart:
     - location: scripts/start_server.sh
-    - location: scripts/create_test_db.sh
       timeout: 300
       runas: ec2-user
   ApplicationStop:
