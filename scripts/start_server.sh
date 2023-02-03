@@ -1,5 +1,6 @@
 #!/bin/bash
-DIR = /home/ec2-user/sample-node-api
+DIR ="/home/ec2-user/sample-node-api"
+sudo chmod -R 777 "$DIR"
 
 
 #navigate into our working directory where we have all our github files
