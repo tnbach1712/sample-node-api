@@ -3,9 +3,10 @@
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 . ~/.nvm/nvm.sh
 nvm install --lts
+nvm install node
 
 # create directory for application
-DIR = /home/ec2-user/sample-node-api
+DIR="/home/ec2-user/sample-node-api"
 
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
